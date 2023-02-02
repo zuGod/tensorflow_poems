@@ -1,3 +1,5 @@
+## 转自华为云实践 源码
+
 <h1 align="center">Welcome to LiBai AI Composer 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-under-blue.svg?cacheSeconds=2592000" />
@@ -8,13 +10,13 @@
 
 > An ai powered automatically generats poems in Chinese.
 >
-> 很久以来，我们都想让机器自己创作诗歌，当无数作家、编辑还没有抬起笔时，AI已经完成了数千篇文章。现在，这里是第一步....
+> 很久以来，我们都想让机器自己创作诗歌，当无数作家、编辑还没有抬起笔时，AI 已经完成了数千篇文章。现在，这里是第一步....
 
 ### 🏠 [Homepage](https://github.com/jinfagang/tensorflow_poems)
 
 ## 👍 Outcome 结果
 
-阅遍了近4万首唐诗，作出：
+阅遍了近 4 万首唐诗，作出：
 
 ```
 龙舆迎池里，控列守龙猱。
@@ -28,7 +30,7 @@
 
 这诗做的很有感觉啊，这都是勤奋的结果啊，基本上学习了全唐诗的所有精华才有了这么牛逼的能力，这一般人能做到？
 本博客讲讲解一些里面实现的技术细节，如果有未尽之处，大家可以通过微信找到我，那个头像很神奇的男人。闲话不多说，先把 github 链接放上来，这个作诗机器人我会一直维护，如果大家因为时间太紧没有时间看，可以给这个项目 star 一下或者 fork，
-我一推送更新你就能看到，主要是为了修复一些 api 问题，tensorflow 虽然到了1.0，但是 api 还是会变化。
+我一推送更新你就能看到，主要是为了修复一些 api 问题，tensorflow 虽然到了 1.0，但是 api 还是会变化。
 把星星加起来，让更多人可以看到我们创造这个作诗机器人，后期会加入更多牛逼掉渣天的功能，比如说押韵等等。
 
 ## 📥 Install 安装
@@ -61,20 +63,20 @@ Here you can get some previews about our projects: http://ai.loliloli.pro (stran
 
 #### 2018-3-12
 
-**tensorflow_poems**来诈尸了，许久没有更新这个项目，不知不觉已经有了上千个star，感觉大家对这个还是很感兴趣，在这里我非常荣幸大家关注这个项目，但是我们不能因此而停止不前，这也是我来诈尸的目的。我会向大家展示一下我最新的进展，首先非常希望大家关注一下我倾心做的知乎专栏，人工智能从入门到逆天杀神以及每周一个黑科技，我们不仅仅要关注人工智能，还有区块链等前沿技术：
+**tensorflow_poems**来诈尸了，许久没有更新这个项目，不知不觉已经有了上千个 star，感觉大家对这个还是很感兴趣，在这里我非常荣幸大家关注这个项目，但是我们不能因此而停止不前，这也是我来诈尸的目的。我会向大家展示一下我最新的进展，首先非常希望大家关注一下我倾心做的知乎专栏，人工智能从入门到逆天杀神以及每周一个黑科技，我们不仅仅要关注人工智能，还有区块链等前沿技术：
 
 - 人工智能从入门到逆天杀神(知乎专栏)： https://zhuanlan.zhihu.com/ai-man
-- 每周一项目黑科技-TrackTech(知乎专栏):  https://zhuanlan.zhihu.com/tracktech
-    If you want talk about AI, visit our website (for now):  http://ai.loliloli.pro (strangeai.pro availiable soon)
-     , **subscribe** our WeChat channel: 奇异人工智能学院
+- 每周一项目黑科技-TrackTech(知乎专栏): https://zhuanlan.zhihu.com/tracktech
+  If you want talk about AI, visit our website (for now): http://ai.loliloli.pro (strangeai.pro availiable soon)
+  , **subscribe** our WeChat channel: 奇异人工智能学院
 
 #### 2017-11-8
 
-貌似距离上一次更新这个repo已经很久了，这段时间很多童鞋通过微信找到了我，甚至包括一些大佬。当时这个项目只是一个练手的东西，那个时候我的手法还不是非常老道。让各位踩坑了。现在**李白**强势归来。在这次的更新中增加了这些改进：
+貌似距离上一次更新这个 repo 已经很久了，这段时间很多童鞋通过微信找到了我，甚至包括一些大佬。当时这个项目只是一个练手的东西，那个时候我的手法还不是非常老道。让各位踩坑了。现在**李白**强势归来。在这次的更新中增加了这些改进：
 
 - 对数据预处理脚本进行了前所未有的简化，现在连小学生都能了解了
-- 训练只需要运行train.py，数据和预训练模型都已经备好
-- 可以直接compose_poem.py 作诗，这次不会出现死循环的情况了。
+- 训练只需要运行 train.py，数据和预训练模型都已经备好
+- 可以直接 compose_poem.py 作诗，这次不会出现死循环的情况了。
 
 #### 2017-6-1 ~~可能是最后一次更新~~
 
@@ -84,17 +86,16 @@ Here you can get some previews about our projects: http://ai.loliloli.pro (stran
  292889553
 ```
 
-
 #### 2017-3-22 重磅更新，推出藏头诗功能
 
 一波小更新，下面的问题已经解决了：
 
-* 训练完成作诗时出现一直不出现的情况，实际上是陷入了一直作诗的死循环，已修复
-* 新增pretty print功能，打印出的古诗标准，接入第三方APP或者其他平台可以直接获取到标准格式的诗词
-* Ternimal disable了tensorflow默认的debug信息
-    最后最后最重要的是： **我们的作诗机器人（暂且叫李白）已经可以根据你的指定的字作诗了哦！！**
-    欢迎大家继续来踩，没有star的快star！！保持更新！！永远开源！！！
-    让我们来看看李白做的藏头诗吧：
+- 训练完成作诗时出现一直不出现的情况，实际上是陷入了一直作诗的死循环，已修复
+- 新增 pretty print 功能，打印出的古诗标准，接入第三方 APP 或者其他平台可以直接获取到标准格式的诗词
+- Ternimal disable 了 tensorflow 默认的 debug 信息
+  最后最后最重要的是： **我们的作诗机器人（暂且叫李白）已经可以根据你的指定的字作诗了哦！！**
+  欢迎大家继续来踩，没有 star 的快 star！！保持更新！！永远开源！！！
+  让我们来看看李白做的藏头诗吧：
 
 ```
 # 最近一直下雨，就作一首雨字开头的吧
@@ -113,7 +114,7 @@ Here you can get some previews about our projects: http://ai.loliloli.pro (stran
 
 ## 👊 它已经不仅仅能够作古诗，还能模仿周杰伦创作歌词！！
 
-这是2017-03-9更新的功能，模仿周杰伦歌曲创作歌词，大家先来感受一下它创作的歌词：
+这是 2017-03-9 更新的功能，模仿周杰伦歌曲创作歌词，大家先来感受一下它创作的歌词：
 
 ```
 我的你的她
@@ -126,38 +127,10 @@ Here you can get some previews about our projects: http://ai.loliloli.pro (stran
 ....
 ```
 
-怎么说，目前由于缺乏训练文本，导致我们的AI做的歌词有点....额，还好啦，有那么一点忧郁之风，这个周杰伦完全不是一种风格呀。
-然而没有关系，目前它训练的文本还太少，只有112首歌，在这里我来呼吁大家一起来整理 **中国歌手的语料文本！！！**
-如果你喜欢周杰伦的歌，可以把他的歌一首一行，每首歌句子空格分开保存到txt中，大家可以集中发到我的[邮箱](mailto:jinfagang19@163.com)：
-相信如果不断的加入训练文本我们的歌词创作机器人会越来越牛逼！当然我会及时把数据集更新到github上，大家可以 star 一下跟进本项目的更新。
-
-## 👥 Authors 作者
-
-👤 **jinfagang**
-
-* Website: http://jinfagang.github.io
-* GitHub: [@JinTian](https://github.com/JinTian)
-
-👤 **William Song**
-
-- Website: http://williamzjc.gitee.io/morninglake/
-- GitHub: [@Freakwill](https://github.com/Freakwill)
-- Twitter: [@WilliamPython](https://twitter.com/WilliamPython)
-
-👤 **Harvey Dam**
-
-- GitHub: [@damtharvey](https://github.com/damtharvey)
-
-👤 **KnowsCount**
-
-- Website: http://docs.knowscount.cc/
-- GitHub: [@KnowsCount](https://github.com/KnowsCount)
-
-## 🎉 Show your support 支持
-
-如果帮助了你，给颗 🌟 罢！
-
-Give a 🌟 if this project helped you!
+怎么说，目前由于缺乏训练文本，导致我们的 AI 做的歌词有点....额，还好啦，有那么一点忧郁之风，这个周杰伦完全不是一种风格呀。
+然而没有关系，目前它训练的文本还太少，只有 112 首歌，在这里我来呼吁大家一起来整理 **中国歌手的语料文本！！！**
+如果你喜欢周杰伦的歌，可以把他的歌一首一行，每首歌句子空格分开保存到 txt 中，大家可以集中发到我的[邮箱](mailto:jinfagang19@163.com)：
+相信如果不断的加入训练文本我们的歌词创作机器人会越来越牛逼！当然我会及时把数据集更新到 github 上，大家可以 star 一下跟进本项目的更新。
 
 ## 📝 License 协议
 
